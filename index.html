@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>POO</title>
+</head>
+<body>
+    <header>
+        <h1>Programação Orientada a Objetos</h1>
+    </header>
+    <aside>
+        <div class="info">
+            As informações postas no formulário abaixo serão expostas nas informações
+            do indivíduo.
+        </div>
+        <form id="form">
+            <fieldset>
+                <legend>Preencha os campos</legend>
+                <input 
+                    type="text"
+                    id="yourName"
+                    class="input"
+                    placeholder="Seu nome"
+                    required>
+                <input maxlength="3" class="input" 
+                    onkeypress="return event.charCode >= 48 && event.charCode <= 57" 
+                    type="text" id="age" placeholder="Idade" required>
+                <input
+                    class="input"
+                    type="text"
+                    placeholder="Profissão"
+                    id="job" 
+                    required>
+                <input
+                    class="input"
+                    type="text"
+                    placeholder="Estuda"
+                    id="study" 
+                    required>
+                <div class="btn-container">
+                    <button type="reset">Limpar</button>
+                    <button type="submit">Enviar</button>
+                </div>
+            </fieldset>
+        </form>
+    </aside>
+    <main>
+        <div class="personDiv" id="personDiv"></div>
+    </main>
+    <footer>
+        <div class="footer-text">
+            <p>
+                Copyright &copy; 2023 por 
+                <a href="https://portfolio-x22d.onrender.com/" target="_blank">
+                    Flamarion França
+                </a>
+            </p>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
